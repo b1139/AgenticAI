@@ -1,0 +1,20 @@
+[project]
+name = "calculator-crew"
+version = "0.1.0"
+description = "A multi-agent calculator using CrewAI and Ollama"
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.86.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_backend"
+
+[tool.setuptools]
+py-modules = ["agentic"]
